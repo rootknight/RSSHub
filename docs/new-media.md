@@ -563,9 +563,9 @@ Tag
 
 <Route author="luyuhuang" example="/ithome/it" path="/ithome/:caty" :paramsDesc="['类别']" radar="1" rssbud="1">
 
-| it      | soft     | win10      | iphone      | ipad      | android      | digi     | next     |
-| ------- | -------- | ---------- | ----------- | --------- | ------------ | -------- | -------- |
-| IT 资讯 | 软件之家 | win10 之家 | iphone 之家 | ipad 之家 | android 之家 | 数码之家 | 智能时代 |
+| it      | soft     | win10      | win11      | iphone      | ipad      | android      | digi     | next     |
+| ------- | -------- | ---------- | ---------- | ----------- | --------- | ------------ | -------- | -------- |
+| IT 资讯 | 软件之家 | win10 之家 | win11 之家 | iphone 之家 | ipad 之家 | android 之家 | 数码之家 | 智能时代 |
 
 </Route>
 
@@ -586,6 +586,10 @@ Tag
 所有专题请见[此处](https://www.ithome.com/zt)
 
 </Route>
+
+### 标签
+
+<Route author="Fatpandac" example="/ithome/tag/win11" path="/ithome/tag/:name" :paramsDesc="['标签名称，可从网址链接中获取']" radar="1" rssbud="1"/>
 
 ## IT 桔子
 
@@ -1187,7 +1191,7 @@ Supported sub-sites:
 
 ### 乃木坂 46 新闻
 
-<Route author="crispgm" example="/nogizaka46/news" path="/nogizaka46/news" />
+<Route author="crispgm Fatpandac" example="/nogizaka46/news" path="/nogizaka46/news" />
 
 ### 欅坂 46 新闻
 
@@ -3604,6 +3608,41 @@ column 为 third 时可选的 category:
 | 全部 | 經濟 | 社會 | 生活 | 政治 | 國際 | 台灣 | 人物 | 中國 |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
 |      | 13   | 15   | 14   | 12   | 16   | 20   | 21   | 19   |
+
+</Route>
+
+## 珠海网
+
+### 栏目
+
+<Route author="nczitzk" example="/hizu" path="/hizu/:column?" :paramsDesc="['栏目，见下表，默认为热点']">
+
+| 分类     | 编号                     |
+| -------- | ------------------------ |
+| 热点     | 5dd92265e4b0bf88dd8c1175 |
+| 订阅     | 5dd921a7e4b0bf88dd8c116f |
+| 学党史   | 604f1cbbe4b0cf5c2234d470 |
+| 政经     | 5dd92242e4b0bf88dd8c1174 |
+| 合作区   | 61259fd6e4b0d294f7f9786d |
+| 名记名播 | 61dfe511e4b0248b60d1c568 |
+| 大湾区   | 5dd9222ce4b0bf88dd8c1173 |
+| 网评     | 617805e4e4b037abacfd4820 |
+| TV 新闻  | 5dd9220de4b0bf88dd8c1172 |
+| 音频     | 5e6edd50e4b02ebde0ab061e |
+| 澳门     | 600e8ad4e4b02c3a6af6aaa8 |
+| 政务     | 600f760fe4b0e33cf6f8e68e |
+| 教育     | 5ff7c0fde4b0e2f210d05e20 |
+| 深圳     | 5fc88615e4b0e3055e693e0a |
+| 中山     | 600e8a93e4b02c3a6af6aa80 |
+| 民生     | 5dd921ece4b0bf88dd8c1170 |
+| 社区     | 61148184e4b08d3215364396 |
+| 专题     | 5dd9215fe4b0bf88dd8c116b |
+| 战疫     | 5e2e5107e4b0c14b5d0e3d04 |
+| 横琴     | 5f88eaf2e4b0a27cd404e09e |
+| 香洲     | 5f86a3f5e4b09d75f99dde7d |
+| 金湾     | 5e8c42b4e4b0347c7e5836e0 |
+| 斗门     | 5ee70534e4b07b8a779a1ad6 |
+| 高新     | 607d37ade4b05c59ac2f3d40 |
 
 </Route>
 

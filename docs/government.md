@@ -76,6 +76,12 @@ pageClass: routes
 
 </Route>
 
+## 德阳市人民政府
+
+### 德阳市政府公开信息
+
+<Route author="zytomorrow" example="/gov/sichuan/deyang/govpulicinfo/德阳市市/市人社局" path="/gov/sichuan/deyang/govpulicinfo/:countyName/:institutionName?" :paramsDesc="['区县名。德阳市、绵竹市、广汉市、什邡市、中江县、罗江区、旌阳区、高新区', '单位名称。可直接输入网页显示单位名称']"/>
+
 ## 广东省人民政府
 
 ### 广东省教育厅
@@ -127,6 +133,12 @@ pageClass: routes
 |   tzgg   |   bmxx   |   cjxx   |   hgbz   |    hgrygs    |     zsff     |
 
 </Route>
+
+### 惠州市人民政府
+
+#### 政务公开
+
+<Route author="Fatpandac" example="/gov/huizhou/zwgk/jgdt" path="/gov/huizhou/zwgk/:category?" :paramsDesc="['资讯类别，可以从网址中得到，默认为政务要闻']"/>
 
 ## 国家税务总局
 
@@ -294,11 +306,35 @@ pageClass: routes
 
 ### 政府新闻
 
-<Route author="EsuRt luyuhuang" example="/gov/suzhou/news/news" path="/gov/suzhou/news/:uid" :paramsDesc="['分类名']">
+<Route author="EsuRt luyuhuang" example="/gov/suzhou/news/news" path="/gov/suzhou/news/:uid" :paramsDesc="['栏目名']">
 
-| 政务要闻 | 区县快讯 | 部门动态 | 新闻视频 | 热点专题 | 市本级专题 | 最新热点专题 | 往期专题 | 区县专题 | 政务公告 | 便民资讯 |
-| :------: | :------: | :------: | :------: | :------: | :--------: | :----------: | :------: | :------: | :------: | :------: |
-|   news   | district |   bmdt   |   xwsp   |   rdzt   |    sbjzt   |    zxrdzt    |   wqzt   |   qxzt   |   zwgg   |   bmzx   |
+| 新闻栏目名 |       :uid       |
+| :--------: | :--------------: |
+|  苏州要闻  |   news 或 szyw   |
+|  区县快讯  | district 或 qxkx |
+|  部门动态  |       bmdt       |
+|  新闻视频  |       xwsp       |
+|  政务公告  |       zwgg       |
+|  便民公告  |       mszx       |
+|  民生资讯  |       bmzx       |
+
+| 热点专题栏目名 |  :uid  |
+| :------------: | :----: |
+|    热点专题    |  rdzt  |
+|   市本级专题   |  sbjzt |
+|  最新热点专题  | zxrdzt |
+|    往期专题    |  wqzt  |
+|    区县专题    |  qxzt  |
+
+::: tip 提示
+
+**热点专题**栏目包含**市本级专题**和**区县专题**
+
+**市本级专题**栏目包含**最新热点专题**和**往期专题**
+
+如需订阅完整的热点专题，仅需订阅 **热点专题**`rdzt` 一项即可。
+
+:::
 
 </Route>
 
