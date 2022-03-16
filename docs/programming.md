@@ -74,6 +74,28 @@ Rated 对象
 
 <Route author="nczitzk" example="/atcoder/post" path="/atcoder/post/:language?/:keyword?" :paramsDesc="['语言，可选 `jp` 即日语 或 `en` 即英语，默认为英语', '关键字，默认为空']"/>
 
+## BBC News Labs
+
+### News
+
+<Route author="elxy" example="/bbcnewslabs/news" path="/bbcnewslabs/news"/>
+
+## Bitbucket
+
+### Commits
+
+<Route author="AuroraDysis" example="/bitbucket/commits/blaze-lib/blaze" path="/bitbucket/commits/:workspace/:repo_slug" :paramsDesc="['Workspace', 'Repository']" rssbud="1" rssbud="1"/>
+
+### Tags
+
+<Route author="AuroraDysis" example="/bitbucket/tags/blaze-lib/blaze" path="/bitbucket/tags/:workspace/:repo_slug" :paramsDesc="['Workspace', 'Repository']" rssbud="1" rssbud="1"/>
+
+## Bitmovin
+
+### Blog
+
+<Route author="elxy" example="/bitmovin/blog" path="/bitmovin/blog"/>
+
 ## Codeforces
 
 #### 最新比赛
@@ -270,6 +292,16 @@ GitHub 官方也提供了一些 RSS:
 ### Tags
 
 <Route author="zoenglinghou" example="/gitlab/tag/rluna-open-source%2Ffile-management%2Fowncloud/core/gitlab.com" path="/gitlab/tag/:namespace/:project/:host?" :paramsDesc="['项目所有者或命名空间。斜杠`/`需要替代为`%2F`', '项目名称', '服务器地址，缺省为 gitlab.com']" />
+
+## Gitpod
+
+### 博客
+
+<Route author="TonyRL" example="/gitpod/blog" path="/gitpod/blog" />
+
+### 更新日志
+
+<Route author="TonyRL" example="/gitpod/changelog" path="/gitpod/changelog" />
 
 ## Go 语言中文网
 
@@ -485,11 +517,11 @@ GitHub 官方也提供了一些 RSS:
 
 ### 频道
 
-<Route author="LogicJake" example="/segmentfault/channel/frontend" path="/segmentfault/channel/:name" :paramsDesc="['频道名称，在频道 URL 可以找到']"/>
+<Route author="LogicJake Fatpandac" example="/segmentfault/channel/frontend" path="/segmentfault/channel/:name" :paramsDesc="['频道名称，在频道 URL 可以找到']"/>
 
 ### 用户
 
-<Route author="leyuuu" example="/segmentfault/user/yunqishequ_5aa899aad5395" path="/segmentfault/user/:name" :paramsDesc="['用户Id，用户详情页URL可以找到']"/>
+<Route author="leyuuu Fatpandac" example="/segmentfault/user/minnanitkong" path="/segmentfault/user/:name" :paramsDesc="['用户Id，用户详情页URL可以找到']"/>
 
 ## TesterHome
 
@@ -791,8 +823,7 @@ GitHub 官方也提供了一些 RSS:
 
 ### 开源项目
 
-<Route author="mlogclub" example="/mlog-club/projects" path="/mlog-club/projects">
-</Route>
+<Route author="mlogclub" example="/mlog-club/projects" path="/mlog-club/projects" />
 
 ## 码农网
 

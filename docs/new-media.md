@@ -467,6 +467,32 @@ Country
 
 </Route>
 
+## Foresight News
+
+### 首页
+
+<Route author="nczitzk" example="/foresightnews" path="/foresightnews"/>
+
+### 文章
+
+<Route author="nczitzk" example="/foresightnews/article" path="/foresightnews/article">
+
+::: tip 提示
+
+**文章** 来自 **首页** 时间流，并筛除 **首页** 时间流中的 **快讯** 获得，所以 `limit` 参数不能按预期返回指定数目的文章。
+
+:::
+
+</Route>
+
+### 快讯
+
+<Route author="nczitzk" example="/foresightnews/news" path="/foresightnews/news"/>
+
+### 专栏
+
+<Route author="nczitzk" example="/foresightnews/column/1" path="/foresightnews/column/:id" :paramsDesc="['专栏 id, 可在专栏页 URL 中找到']"/>
+
 ## Global Disinformation Index
 
 ### Research
@@ -1470,6 +1496,10 @@ Supported sub-sites:
 
 </Route>
 
+### 快讯
+
+<Route author="Fatpandac" example="/chaping/newsflash" path="/chaping/newsflash"/>
+
 ## 城农 Growin' City
 
 ### 城农资讯观点
@@ -2028,6 +2058,14 @@ others = 热点新闻 + 滚动新闻
 | 资讯   | 视频     | 电台     | 文章       |
 | ---- | ------ | ------ | -------- |
 | news | videos | radios | articles |
+
+</Route>
+
+### 标签
+
+<Route author="StevenRCE0" example="/gcores/tag/42/articles" path="/gcores/tag/:tag/:category?" :paramsDesc="['标签名，可在选定标签分类页面的 URL 中找到，如视觉动物——42', '分类名']" radar="1">
+
+分类名同上。
 
 </Route>
 
@@ -2651,6 +2689,22 @@ column 为 third 时可选的 category:
 ### 新闻
 
 <Route author="howel52" example="/jpmorganchase" path="/jpmorganchase"/>
+
+## 木木博客
+
+### 每天六十秒（60 秒）读懂世界
+
+<Route author="Fatpandac" example="/liulinblog/kuaixun" path="/liulinblog/kuaixun"/>
+
+### 科技新闻
+
+<Route author="Fatpandac" example="/liulinblog/itnews/seo" path="/liulinblog/itnews/:channel?" :paramsDesc="['频道，默认为互联网早报']">
+
+|   互联网早报  | 站长圈 |
+| :------: | :-: |
+| internet | seo |
+
+</Route>
 
 ## 鸟哥笔记
 
@@ -3727,6 +3781,18 @@ column 为 third 时可选的 category:
 | 要闻     | 国内       | 国际       | 企业      | 品牌    | 外贸    | 政策     | 科技         | 流行      | 服装      | 家纺      |
 | ------ | -------- | -------- | ------- | ----- | ----- | ------ | ---------- | ------- | ------- | ------- |
 | newsyw | domestic | internal | company | brand | trade | policy | Technology | fashion | apparel | hometex |
+
+</Route>
+
+## 中国工人出版社
+
+### 新闻中心
+
+<Route author="nczitzk" example="/wp-china/news" path="/wp-china/news/:category?" :paramsDesc="['分类，见下表，默认为最新资讯']">
+
+| 最新资讯   | 专题报道    |
+| ------ | ------- |
+| latest | stories |
 
 </Route>
 
