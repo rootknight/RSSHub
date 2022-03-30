@@ -1869,7 +1869,7 @@ area 分区选项
 
 ### 首页
 
-<Route author="nczitzk Jeason0228" example="/guancha" path="/guancha/:caty?" :paramsDesc="['分类，见下表，默认为全部']">
+<Route author="nczitzk Jeason0228" example="/guancha" path="/guancha/:category?" :paramsDesc="['分类，见下表，默认为全部']">
 
 | 全部  | 评论 & 研究 | 要闻    | 风闻      | 热点新闻   | 滚动新闻    |
 | --- | ------- | ----- | ------- | ------ | ------- |
@@ -1889,7 +1889,7 @@ others = 热点新闻 + 滚动新闻
 
 ### 观学院
 
-<Route author="nczitzk" example="/guancha/member/recommend" path="/guancha/member/:caty?" :paramsDesc="['分类，见下表']">
+<Route author="nczitzk" example="/guancha/member/recommend" path="/guancha/member/:category?" :paramsDesc="['分类，见下表']">
 
 | 精选        | 观书堂   | 在线课     | 观学院      |
 | --------- | ----- | ------- | -------- |
@@ -2658,13 +2658,13 @@ column 为 third 时可选的 category:
 | --- | ----- | ------ | ---------- | ---------- |
 | all | games | comics | publishing | tablegames |
 
-| 潮玩模型 | 影视         | 音乐    | 活动         | 设计     |
-| ---- | ---------- | ----- | ---------- | ------ |
-| toys | film-video | music | activities | design |
+| 卡牌    | 潮玩模型 | 影视         | 音乐    | 活动         |
+| ----- | ---- | ---------- | ----- | ---------- |
+| cards | toys | film-video | music | activities |
 
-| 科技         | 食品   | 爱心通道    | 动物救助    |
-| ---------- | ---- | ------- | ------- |
-| technology | food | charity | animals |
+| 设计     | 科技         | 食品   | 爱心通道    | 动物救助    |
+| ------ | ---------- | ---- | ------- | ------- |
+| design | technology | food | charity | animals |
 
 | 个人愿望   | 其他     |
 | ------ | ------ |
@@ -3714,12 +3714,12 @@ column 为 third 时可选的 category:
 
 ### 新闻
 
-<Route author="LogicJake" example="/mpaypass/news" path="/mpaypass/news"/>
+<Route author="LogicJake genghis-yang" example="/mpaypass/news" path="/mpaypass/news"/>
 
 ### 分类
 
 <Route author="zhuan-zhu" example="/mpaypass/main/policy" path="mpaypass/main/:type?"
-:paramsDesc="['新闻类型,类型可在URL中找到，类似policy，eye等，空或其他任意值展示最新新闻']"/>
+:paramsDesc="['新闻类型，类型可在URL中找到，类似`policy`，`eye`等，空或其他任意值展示最新新闻']"/>
 
 ## 亿欧网
 
