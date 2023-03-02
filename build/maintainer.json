@@ -4912,6 +4912,9 @@
     "/wsyu/news/:type?": [
         "Derekmini"
     ],
+    "/wxkol/show/:id": [
+        "TonyRL"
+    ],
     "/wyzxwk/article/:id?": [
         "nczitzk"
     ],
@@ -5052,6 +5055,9 @@
     ],
     "/yaohuo/": [
         "nczitzk"
+    ],
+    "/ycwb/:node": [
+        "TimWu007"
     ],
     "/yicai/author/:id?": [
         "nczitzk"
