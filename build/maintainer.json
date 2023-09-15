@@ -1160,6 +1160,9 @@
     "/chinaventure/news/:id?": [
         "yuxinliu-alex"
     ],
+    "/chinawriter/:id?": [
+        "nczitzk"
+    ],
     "/chsi/hotnews": [
         "yanbot-team"
     ],
@@ -3670,6 +3673,9 @@
     ],
     "/lovelive-anime/schedules/:serie/:category?": [
         "axojhf"
+    ],
+    "/lsnu/jiaowc/tzgg/:category?": [
+        "nyaShine"
     ],
     "/luogu/contest": [
         "prnake"
