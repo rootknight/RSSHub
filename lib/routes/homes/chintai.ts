@@ -24,8 +24,9 @@ export const handler = async (ctx): Promise<Data> => {
     try {
         html = await fetchPage(listUrl);
     } catch (error) {
-        // The site answers a page past the last with 422; that page simply has no room.
-        if (page === '1' || !(error instanceof FetchError) || error.status !== 422) {
+        // The site answers a page past the last with 404 or 422 (港区 page 999 and page 9999 on
+        // 2026-11-01); that page simply has no room. Page 1 has no such excuse.
+        if (page === '1' || !(error instanceof FetchError) || (error.status !== 404 && error.status !== 422)) {
             throw error;
         }
         html = '';
