@@ -24,7 +24,9 @@ const fixImages = ($) => {
 };
 
 const hdImage = (img) => {
-    img.attribs.src = img.attribs.src.replace('_thm', '').replace('_small', '');
+    if (img.attribs.src) {
+        img.attribs.src = img.attribs.src.replace('_thm', '').replace('_small', '');
+    }
     if (!(img.parentNode.name === 'a' && img.parentNode.attribs['data-width'] && img.parentNode.attribs['data-height'])) {
         return;
     }
