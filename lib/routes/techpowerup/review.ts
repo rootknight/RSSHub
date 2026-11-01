@@ -38,10 +38,10 @@ const language: Language = 'en';
 async function handler(ctx) {
     const keyword = ctx.req.param('keyword');
 
-    const url = new URL(`${baseUrl}/review/${keyword ? 'search/' : ''}`);
+    // The review list filters by keyword itself; the old /review/search/ endpoint answers 410
+    const url = new URL(`${baseUrl}/review/`);
     if (keyword) {
         url.searchParams.set('q', keyword);
-        url.searchParams.set('_', Date.now().toString());
     }
 
     const response = await ofetch(url.href);
